@@ -1,0 +1,378 @@
+Product Support Bulletin
+
+
+
+Subject: Decimal and ASCII Values for Variables
+
+
+Date:  9/28/89                             PSB No:  
+Page:  1 of 8                              Originator: RFB
+
+The following list shows the ESC Codes that use a variable within a command. 
+The ASCII characters 1 and 0, or their decimal or hexadecimal equivalent can
+be used.  Most programs use the ASCII decimal equivalent as the method of
+inserting codes.  However, some programs are restricted to using only decimal
+values instead of the ASCII decimal equivalent.
+Note: "*" Indicates the command is supported.
+                                                  
+             Epson 9/24 Pin Printer Control Codes
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╧
+╨ PITCH AND PROPORTIONAL SPACING                              ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Proportional On/Off   ╨ ESC p n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ PRINT ENHANCEMENT                                           ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Select NLQ or Draft   ╨ ESC x n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Expanded Print On/Off ╨ ESC W n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Double High On/Off    ╨ ESC w n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Underlining On/Off    ╨ ESC - n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select Super/Subscript╨ ESC S n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ USER DEFINED CHARACTER                                      ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Select Character Set  ╨ ESC % n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ MISCELLANEOUS CODES                                         ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Unidirectional On/Off ╨ ESC U n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Half Speed On/Off     ╨ ESC s n            ╨   *   ╨   *    ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪  
+
+                                               PSB No:
+                                                Page:  2 of 8 
+
+Only the decimal or hexadecimal values may be used for the command variable(s)
+listed on the following pages.  For example, the command ESC k n in basic must be
+expressed as CHR$(27)"k"chr$(0) or CHR$(&h1B)"k"CHR$(&h00) to select the Roman
+font.
+
+                Epson 9/24 Pin Printer Control Codes                  
+                                                              
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╧
+╨ PRINT STYLE SELECTION                                       ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Select Font:          ╨ ESC  k n           ╨   *   ╨   *    ╨
+╨ n = 0 Roman           ╨                    ╨   *   ╨   *    ╨
+╨ n = 1 San Serif       ╨                    ╨   *   ╨   *    ╨
+╨ n = 2 Courier         ╨                    ╨       ╨   *    ╨
+╨ n = 3 Prestige        ╨                    ╨       ╨   *    ╨
+╨ n = 4 Script          ╨                    ╨       ╨   *    ╨
+╨ n = 5 Ocr-B           ╨                    ╨       ╨   *    ╨
+╨ n = 6 Ocr-A           ╨                    ╨       ╨   *    ╨
+╨ n = 7 Orator ддд©    зв Available only with╨       ╨   *    ╨
+╨ n = 8 Orator S ды    юв Multi-Font Module  ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Character Style:      ╨ ESC q n            ╨       ╨   *    ╨
+╨ n = 0 Normal          ╨                    ╨       ╨   *    ╨
+╨ n = 1 Outline         ╨                    ╨       ╨   *    ╨
+╨ n = 2 Shadow          ╨                    ╨       ╨   *    ╨
+╨ n = 3 Outline & Shadow╨                    ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Master Select:        ╨ ESC  ! n           ╨   *   ╨   *    ╨
+╨ n =    0 Pica         ╨                    ╨   *   ╨   *    ╨
+╨ n =    1 Elite        ╨                    ╨   *   ╨   *    ╨
+╨ n =    2 Proportional ╨                    ╨   *   ╨   *    ╨
+╨ n =    4 Condensed    ╨                    ╨   *   ╨   *    ╨
+╨ n =    8 Emphasized   ╨                    ╨   *   ╨   *    ╨
+╨ n =   16 Double Strike╨                    ╨   *   ╨   *    ╨
+╨ n =   32 Double Wide  ╨                    ╨   *   ╨   *    ╨
+╨ n =   64 Italic       ╨                    ╨   *   ╨   *    ╨
+╨ n =  128 Underline    ╨                    ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select Score:         ╨ ESC ( - n1 n2 m d1 ╨       ╨   *    ╨
+╨ n1 Must be 3          ╨ d2                 ╨       ╨   *    ╨
+╨ n2 Must be 0          ╨                    ╨       ╨   *    ╨
+╨  m Must be 1          ╨                    ╨       ╨   *    ╨
+╨ d1 = 1 Underscore     ╨                    ╨       ╨   *    ╨
+╨ d1 = 2 Strike-Through ╨                    ╨       ╨   *    ╨
+╨ d1 = 3 Overscore      ╨                    ╨       ╨   *    ╨
+╨ d2 = 0 Cancel Selected╨                    ╨       ╨   *    ╨
+╨        Score          ╨                    ╨       ╨        ╨
+╨ d2 = 1 Single Line    ╨                    ╨       ╨   *    ╨
+╨        Continuous     ╨                    ╨       ╨        ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+                                                 Page:  3 of 8 
+
+                Epson 9/24 Pin Printer Control Codes
+
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммнммммммммммммммммммммнмммммммнмммммммм╧
+╨ Select Score:         ╨ ESC (- n1 n2 m d1  ╨       ╨   *    ╨
+╨ (continued)           ╨ d2                 ╨       ╨        ╨
+╨ d2 = 2 Double Line    ╨                    ╨       ╨   *    ╨
+╨        Continuous     ╨                    ╨       ╨        ╨
+╨ d2 = 5 Single Line    ╨                    ╨       ╨   *    ╨
+╨        Broken         ╨                    ╨       ╨        ╨
+╨ d2 = 6 Double Line    ╨                    ╨       ╨   *    ╨
+╨        Broken         ╨                    ╨       ╨        ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ LINE SPACING                                                ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ n/360-inch Spacing    ╨ ESC + n            ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ n/180-inch Spacing    ╨ ESC 3 n            ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ n/216-inch Spacing    ╨ ESC 3 n            ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ n/60-inch Spacing     ╨ ESC A n            ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ n/72-inch Spacing     ╨ ESC A n            ╨   *   ╨        ╨
+гддддддддддддддддддддддд╨ддддддддддддддддддддвдддддддвдддддддд╤
+╨ Immediate n/216 Feed  ╨ ESC J n            ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Immediate n/180 Feed  ╨ ESC J n            ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Reverse Feed n/216    ╨ ESC j n            ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Reverse Feed n/180    ╨ ESC j n            ╨       ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ PAGE FORMATTING                                             ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Immediate Mode On/Off ╨ ESC i n            ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Intercharacter Spacing╨ ESC SP n           ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Page Length in Lines  ╨ ESC C n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Page Length in Inches ╨ ESC C NUL n        ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Skip Over Perforation ╨ ESC N n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set Left Margin       ╨ ESC l n            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set Right Margin      ╨ ESC Q n            ╨   *   ╨   *    ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+                                                PSB No: 
+                                                 Page:  4 of 8
+
+                Epson 9/24 Pin Printer Control Codes
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╧
+╨ HORIZONTAL TAB SETTING                                      ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Horizontal Tab        ╨ HT                 ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Horizontal Tab Stops  ╨ ESC D n1 n2..NUL   ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set Tab Increment     ╨ ESC e NUL n        ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ SET HTabs in Spaces   ╨ ESC f NUL n        ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ VERTICAL TAB SETTING                                        ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Set Tab Stops         ╨ ESC B n1 n2..NUL   ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set VFU Tab Channel   ╨ ESC b x n1 n2..NUL ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select VFU Tab Channel╨ ESC / x            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set Tab Increment     ╨ ESC e 1 n          ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Vertical Skip         ╨ ESC f 1 n          ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set VTabs in Channel  ╨ ESC b c n1 n2...NUL╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set VTab Channel      ╨ ESC / n            ╨   *   ╨   *    ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                PSB No:
+                                                 Page:  5 of 8
+
+                Epson 9/24 Pin Printer Control Codes                  
+
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╧
+╨ GRAPHICS                                                    ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Select Graphic Mode   ╨ ESC  * m n1 n2 data╨   *   ╨   *    ╨
+╨ 8-Pin Graphics:       ╨                    ╨       ╨        ╨
+╨ m = 0   60 DPI        ╨                    ╨   *   ╨   *    ╨
+╨ m = 1  120 DPI        ╨                    ╨   *   ╨   *    ╨
+╨ m = 2  120 DPI Hi Spd ╨                    ╨   *   ╨   *    ╨
+╨ m = 3  240 DPI        ╨                    ╨   *   ╨   *    ╨
+╨ m = 4   80 DPI        ╨                    ╨   *   ╨   *    ╨
+╨ m = 5   72 DPI        ╨                    ╨   *   ╨        ╨
+╨ m = 6   90 DPI        ╨                    ╨   *   ╨   *    ╨
+╨ m = 7  144 DPI        ╨                    ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select Graphics Mode  ╨ ESC * m n1 n2 data ╨       ╨   *    ╨
+╨ 24-Pin Graphics:      ╨                    ╨       ╨        ╨
+╨ m = 32   60 DPI       ╨                    ╨       ╨   *    ╨
+╨ m = 33  120 DPI       ╨                    ╨       ╨   *    ╨
+╨ m = 38   90 DPI       ╨                    ╨       ╨   *    ╨
+╨ m = 39  180 DPI       ╨                    ╨       ╨   *    ╨
+╨ m = 40  360 DPI       ╨                    ╨       ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ Individual Graphics Commands                                ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Single-Density 60 DPI ╨ ESC K n1 n2 data   ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Double-Density 120 DPI╨ ESC L n1 n2 data   ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Hi-Speed Dbl. 120 DPI ╨ ESC Y n1 n2 data   ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Quad. Density 240 DPI ╨ ESC Z n1 n2 data   ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ 9-Pin 60 DPI          ╨ ESC ^ 0 n1 n2 data ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ 9-Pin 120 DPI         ╨ ESC ^ 1 n1 n2 data ╨   *   ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Reassign Graphics Mode╨ ESC ? n            ╨   *   ╨        ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+                                                PSB No:
+                                                 Page:  6 of 8
+
+                Epson 9/24 Pin Printer Control Codes                  
+
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╧
+╨ USER DEFINED CHARACTERS                                     ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Define User Defined   ╨ ESC & NUL n1 n2 a1 ╨       ╨        ╨
+╨ Character             ╨ data               ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Copy ROM to RAM       ╨ ESC : NUL NUL NUL  ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Copy ROM to RAM       ╨ ESC : NUL n NUL    ╨   *   ╨   *    ╨
+╨ n = 0 Roman           ╨                    ╨       ╨        ╨
+╨ n = 1 San Serif       ╨                    ╨       ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select ROM CG         ╨ ESC % 0            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select Download CG    ╨ ESC % 1            ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ JUSTIFICATION                                               ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤ 
+╨ Justification:        ╨ ESC a n            ╨   *   ╨   *    ╨
+╨                       ╨                    ╨       ╨        ╨
+╨ n = 0 Flush Left      ╨                    ╨   *   ╨   *    ╨
+╨ n = 1 Centering       ╨                    ╨   *   ╨   *    ╨
+╨ n = 2 Flush Right     ╨                    ╨   *   ╨   *    ╨
+╨ n = 3 Justified       ╨                    ╨   *   ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ SELECT CHARACTER TABLE                                      ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Select Character Set: ╨ ESC t n            ╨   *   ╨   *    ╨
+╨                       ╨                    ╨       ╨        ╨
+╨ n = 0 Italic set      ╨                    ╨   *   ╨   *    ╨
+╨ n = 1 Graphic set     ╨                    ╨   *   ╨   *    ╨
+╨ n = 2 User-Defined Set╨                    ╨       ╨   *    ╨
+╨       Remap to 80h-FFh╨                    ╨       ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Printable Code Area   ╨ ESC I n            ╨   *   ╨        ╨
+╨ Expansion:            ╨                    ╨       ╨        ╨
+╨ n = 0 Restore Codes   ╨                    ╨       ╨        ╨
+╨ n = 1 Redefine Codes  ╨                    ╨       ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Select International  ╨ ESC R n            ╨   *   ╨   *    ╨
+╨ Character Set:        ╨                    ╨       ╨        ╨
+╨                       ╨                    ╨       ╨        ╨
+╨ n = 0 USA             ╨                    ╨       ╨        ╨
+╨ n = 1 France          ╨                    ╨       ╨        ╨
+╨ n = 2 Germany         ╨                    ╨       ╨        ╨
+╨ n = 3 United Kingdom  ╨                    ╨       ╨        ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+                                                PSB No:
+                                                 Page:  7 of 8
+
+                Epson 9/24 Pin Printer Control Codes                  
+
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммнммммммммммммммммммммнмммммммнмммммммм╧
+╨ Select International  ╨ ESC R n            ╨   *   ╨   *    ╨
+╨ Characters (continued)╨                    ╨       ╨        ╨   
+╨                       ╨                    ╨       ╨        ╨
+╨ n =  4 Denmark I      ╨                    ╨   *   ╨   *    ╨
+╨ n =  5 Sweden         ╨                    ╨   *   ╨   *    ╨
+╨ n =  6 Italy          ╨                    ╨   *   ╨   *    ╨
+╨ n =  7 Spain          ╨                    ╨   *   ╨   *    ╨
+╨ n =  8 Japan          ╨                    ╨   *   ╨   *    ╨
+╨ n =  9 Norway         ╨                    ╨   *   ╨   *    ╨
+╨ n = 10 Denmark II     ╨                    ╨   *   ╨   *    ╨
+╨ n = 11 Spain II       ╨                    ╨   *   ╨   *    ╨
+╨ n = 12 Latin America  ╨                    ╨   *   ╨   *    ╨
+╨ n = 13 Korea          ╨                    ╨       ╨   *    ╨
+╨ n = 64 Legal          ╨                    ╨       ╨   *    ╨
+гдддддддддддддддддддддддпддддддддддддддддддддпдддддддпдддддддд╤
+╨ OTHER CONTROL CODES                                         ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Set Absolute Print    ╨ ESC $ n1 n2        ╨   *   ╨   *    ╨
+╨ Position              ╨                    ╨       ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Set Relative Print    ╨ ESC \ n1 n2        ╨   *   ╨   *    ╨
+╨ Position              ╨                    ╨       ╨        ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Repeat Data           ╨ ESC V n data       ╨       ╨   *    ╨
+гдддддддддддддддддддддддвддддддддддддддддддддвдддддддвдддддддд╤
+╨ Color Selection:      ╨ ESC r n            ╨   *   ╨   *    ╨
+╨                       ╨                    ╨       ╨        ╨
+╨ n = 0 Black           ╨                    ╨   *   ╨   *    ╨
+╨ n = 1 Red (Magenta)   ╨                    ╨   *   ╨   *    ╨
+╨ n = 2 Blue (Cyan)     ╨                    ╨   *   ╨   *    ╨
+╨ n = 3 Violet          ╨                    ╨   *   ╨   *    ╨
+╨ n = 4 Yellow          ╨                    ╨   *   ╨   *    ╨
+╨ n = 5 Orange          ╨                    ╨   *   ╨   *    ╨
+╨ n = 6 Green           ╨                    ╨   *   ╨   *    ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+                                                PSB No:
+                                                 Page:  8 of 8
+
+The following command uses the ASCII character decimal value only.
+
+                Epson 9/24 Pin Printer Control Codes                  
+
+имммммммммммммммммммммммкммммммммммммммммммммкмммммммкмммммммм╩
+╨ FEATURE               ╨ ESCAPE CODE        ╨ 9 Pin ╨ 24 Pin ╨
+лмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╧
+╨ CUT SHEET FEEDER CONTROL                                    ╨
+гдддддддддддддддддддддддрддддддддддддддддддддрдддддддрдддддддд╤
+╨ Cut Sheet Feeder      ╨ ESC EM n           ╨       ╨        ╨
+╨ Operation:            ╨                    ╨   *   ╨   *    ╨
+╨                       ╨                    ╨       ╨        ╨
+╨ n = 0 Disable CSF     ╨                    ╨   *   ╨   *    ╨
+╨ n = 1 Select Bin 1    ╨                    ╨   *   ╨   *    ╨
+╨ n = 2 Select Bin 2    ╨                    ╨   *   ╨   *    ╨
+╨ n = 4 Enable CSF      ╨                    ╨   *   ╨   *    ╨
+╨ n = R Eject Sheet     ╨                    ╨   *   ╨   *    ╨
+хмммммммммммммммммммммммйммммммммммммммммммммймммммммймммммммм╪
+                                              
+
+It is urged that a functional understanding of the printer commands be obtained. 
+Reference to the User's Manual is encouraged whenever a more detailed command
+description is desired.  Some of the commands listed are unique to certain printers. 
+For a detailed listing of the commands supported by a specific printer, please refer to
+the Command Summary in the printer's User's Manual or the Control Code Matrix
+chapter in the Epson Programmers Reference Manual.  The Programmers Reference
+Manual can be ordered from Epson Accessories Sales under Part No. : PTM-0.
+
+Note:    If a particular command is not listed in the printer's Users
+         Manual, the command is not supported.
