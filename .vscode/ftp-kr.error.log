@@ -1,9 +1,0 @@
-[Error]
-message: Timeout while connecting to server
-[Stack Trace]
-Error: Timeout while connecting to server
-	at _errorWrap (C:\Users\Anonymous\.vscode\extensions\ruakr.ftp-kr-1.1.7\out\ftp.js:532:16)
-	at Object.<anonymous> (C:\Users\Anonymous\.vscode\extensions\ruakr.ftp-kr-1.1.7\out\ftp.js:634:23)
-	at Generator.throw (<anonymous>)
-	at rejected (C:\Users\Anonymous\.vscode\extensions\ruakr.ftp-kr-1.1.7\out\ftp.js:5:65)
-	at <anonymous>
